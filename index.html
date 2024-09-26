@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Directory Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Company Directory Portal</h1>
+    </header>
+<div class="container">
+    <br>
+    <section id="registration-form">
+        <h2 class="text-center">Employee Registration Form</h2>
+        <form>
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="department">Department:</label>
+            <select name="" id="">
+                <option value="">IT</option>
+                <option value="">HR</option>
+                <option value="">Finance</option>
+                <option value="">Marketing</option>
+            </select>
+
+            <label for="department">Employee Id:</label>
+            <input type="text" id="department" name="department" required>
+
+            <label for="department">Profile Picture URL:</label>
+            <input type="text" id="department" name="department" required>
+
+            <button type="submit">Register Employee</button>
+        </form>
+    </section>
+
+    <section id="employee-list">
+        <h2 class="text-center">Employee List</h2>
+        <ol>
+            <li><span class="text-primary">John Doe - john@example.com</span></li>
+            <hr>
+            <li><span class="text-primary">Jane Smith - jane@example.com</span></li>
+            <hr>
+            <!-- Add dynamically with JavaScript -->
+        </ol>
+    </section>
+
+    <section id="employee-details">
+        <h2 class="text-center">Employee Details</h2>
+        <table>
+            <thead class="bg-primary">
+                <tr>
+                    <th>Name</th>
+                    <th>Employee ID</th>
+                    <th>Department</th>
+                    <th>Profile Picture</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>John Doe</td>
+                    <td>12345</td>
+                    <td>IT</td>
+                    <td><img src="https://via.placeholder.com/50" alt="" ></td>
+                </tr>
+                
+                <tr>
+                    <td>Jane Smith</td>
+                    <td>67890</td>
+                    <td>HR</td>
+                    <td><img src="https://via.placeholder.com/50" alt=""></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="map">
+        <h2 class="text-center">Company Location</h2>
+        <div id="map-container">
+            <!-- Embed Google Maps or OpenStreetMap -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d367.26607652443727!2d78.38971596211196!3d17.498030204824097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb91f3fdf6bde9%3A0x752db86a6ab3be2a!2sInnomatics%20Research%20Labs!5e1!3m2!1sen!2sin!4v1727238708760!5m2!1sen!2sin"
+                width="600" height="450" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+</div>
+    <footer>
+        <p>&copy; 2024 Company Directory Portal</p>
+    </footer>
+</body>
+</html>
